@@ -6,7 +6,17 @@ AMID - Another Mongo Internet Driver
 Description
 -----------
 
-This is a REST server for MongoDB using Node, using the native node.js MongoDB driver.
+Node.js REST interface for MongoDB, we modified mongodb-rest (https://github.com/tdegrunt/mongodb-rest) to manage more operation:
+
+- counting elements 
+- distinct operation 
+- excel export
+- list of available db collection
+- list of keys of a specific query
+- Multithreading support
+
+It's now also possible to search by date range and are managed sort operations.
+
 
 Installation
 ------------
@@ -23,12 +33,16 @@ Supported REST requests:
 * `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D` - Returns all documents satisfying query
 * `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&limit=2&skip=2` - Ability to add options to query (limit, skip, etc)
 * `GET /db/collection/id` - Returns document with _id_
+* `GET db ` - List all collection/document
+* `GET /db/collection/?operation=key` - List all key of collection
+* `GET /db/collection/?operation=excel&query=%7B%22isDone%22%3A%20false%7D` - export query in excel
+* `GET /db/collection/?sort=[{"property":null,"direction":"ASC"}]` - Returns all document soted by ASC
+* `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&operation=count` - Count elements 
+* `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&operation=distinct&fields=Market&page=1&start=0&limit=25&sort=[{"property":null,"direction":"ASC"}]` - Distinct and sort operation
 * `POST /db/collection` - Insert new document in collection (document in POST body)
 * `PUT /db/collection/id` - Update document with _id_ (updated document in PUT body)
 * `DELETE /db/collection/id` - Delete document with _id_
-* `/GET db ` - List all collection/document
-* `/GET /db/collection/?operation=key` - List all key of collection
-* `/GET /db/collection/?operation=excel&query=%7B%22isDone%22%3A%20false%7D` - export query in csv
+
 
 
 Content Type:
@@ -46,3 +60,4 @@ Credits
 * [MongoDB Driver](http://github.com/christkv/node-mongodb-native)
 * [Express](http://expressjs.com/)
 * [npm](http://npmjs.org/)
+* [mongodb-rest](https://github.com/tdegrunt/mongodb-rest)
