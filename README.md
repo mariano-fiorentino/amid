@@ -9,8 +9,8 @@ Description
 Node.js REST interface for MongoDB, we modified mongodb-rest (https://github.com/tdegrunt/mongodb-rest) to manage more operation:
 
 - counting elements 
-- distinct operation 
-- excel export
+- "distinct" operations 
+- excel/csv export
 - list of available db collection
 - list of keys of a specific query
 - Multithreading support
