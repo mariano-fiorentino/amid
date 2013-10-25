@@ -1,7 +1,7 @@
 Name
 ----
 
-AMID - Another Mongo Internet Driver 
+AMID - Another.js Mongo Internet Driver 
 
 Description
 -----------
@@ -38,7 +38,7 @@ Supported REST requests:
 * `GET /db/collection/?operation=excel&query=%7B%22isDone%22%3A%20false%7D` - export query in excel
 * `GET /db/collection/?sort=[{"property":null,"direction":"ASC"}]` - Returns all document soted by ASC
 * `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&operation=count` - Count elements 
-* `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&operation=distinct&fields=Market&page=1&start=0&limit=25&sort=[{"property":null,"direction":"ASC"}]` - Distinct and sort operation
+* `GET /db/collection?operation=distinct&fields=Market&sort=[{"property":null,"direction":"ASC"}]` - Distinct and sort operation
 * `POST /db/collection` - Insert new document in collection (document in POST body)
 * `PUT /db/collection/id` - Update document with _id_ (updated document in PUT body)
 * `DELETE /db/collection/id` - Delete document with _id_
