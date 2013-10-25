@@ -1,5 +1,4 @@
 var fs = require("fs");
-//var sys = require("sys"),
 var cluster = require('cluster');
 var http = require('http');
 var numCPUs = require('os').cpus().length;
@@ -11,6 +10,7 @@ var config = { "db": {
   },
   'server': {
     'port': 3000,
+	'timeout': 120,
     'address': "0.0.0.0"
   },
   'flavor': "regular",
@@ -49,6 +49,6 @@ if (cluster.isMaster) {
     app.listen(config.server.port, config.server.address);
     app.on('connection', function(socket) {
 
-	socket.setTimeout(120 * 1000);
+		socket.setTimeout(config.server.timeout * 1000);
     });
 }
