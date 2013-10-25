@@ -66,5 +66,5 @@ Credits
 Authors
 ------------
 
-Mariano Fiorentino
-Andrea Negro
+* Mariano Fiorentino
+* Andrea Negro
