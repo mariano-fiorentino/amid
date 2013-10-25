@@ -61,3 +61,10 @@ Credits
 * [Express](http://expressjs.com/)
 * [npm](http://npmjs.org/)
 * [mongodb-rest](https://github.com/tdegrunt/mongodb-rest)
+* 
+
+Authors
+------------
+
+Mariano Fiorentino
+Andrea Negro
