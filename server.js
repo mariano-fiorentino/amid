@@ -1,3 +1,11 @@
+/* 
+    server.js
+    amid
+
+    Created by Tom de Grunt on 2010-10-03 in mongodb-rest
+    New version Copyright (c) 2013 Mariano Fiorentino, Andrea Negro	
+		This file is part of amid.
+*/ 
 var fs = require("fs");
 var cluster = require('cluster');
 var http = require('http');
