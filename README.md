@@ -17,7 +17,6 @@ Node.js REST interface for MongoDB, we modified mongodb-rest (https://github.com
 
 It's now also possible to search by date range and are managed sort operations.
 
-
 Installation
 ------------
 

@@ -1,7 +1,7 @@
 {
   "name": "amid",
   "description": "Another Mongo Internet Driver",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "author": {
     "name": "Andrea Negro, Mariano Fiorentino",
     "email": "andreakobal@gmail.com, mariano.fiorentino@gmail.com"
@@ -10,6 +10,7 @@
     "express": ">= 2.2.2",
     "mongodb": ">= 0.9.2",
     "jade": ">= 0.10.4",
+    "log4js": ">= 0.5.0",
     "excel-export": ">= 0.2.1"
   },
   "keywords": [
@@ -35,5 +36,12 @@
   },
   "scripts": {
     "start": "node server.js"
-  }
+  },
+  "readme": "Name\n----\n\nAMID - Another.js Mongo Internet Driver \n\nDescription\n-----------\n\nNode.js REST interface for MongoDB, we modified mongodb-rest (https://github.com/tdegrunt/mongodb-rest) to manage more operation:\n\n- counting elements \n- \"distinct\" operations \n- excel/csv export\n- list of available db collection\n- list of keys of a specific query\n- Multithreading support\n\nIt's now also possible to search by date range and are managed sort operations.\n\nInstallation\n------------\n\nInstallation is now via npm: `npm install amid`.\nAfter that you can just issue `amid-rest` on the command line and the server should start.\n\nNotes\n-----\n\nSupported REST requests:\n\n* `GET /db/collection` - Returns all documents\n* `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D` - Returns all documents satisfying query\n* `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&limit=2&skip=2` - Ability to add options to query (limit, skip, etc)\n* `GET /db/collection/id` - Returns document with _id_\n* `GET db ` - List all collection/document\n* `GET /db/collection/?operation=key` - List all key of collection\n* `GET /db/collection/?operation=excel&query=%7B%22isDone%22%3A%20false%7D` - export query in excel\n* `GET /db/collection/?sort=[{\"property\":null,\"direction\":\"ASC\"}]` - Returns all document soted by ASC\n* `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&operation=count` - Count elements \n* `GET /db/collection?operation=distinct&fields=Market&sort=[{\"property\":null,\"direction\":\"ASC\"}]` - Distinct and sort operation\n* `POST /db/collection` - Insert new document in collection (document in POST body)\n* `PUT /db/collection/id` - Update document with _id_ (updated document in PUT body)\n* `DELETE /db/collection/id` - Delete document with _id_\n\n\n\nContent Type:\n\n* Please make sure `application/json` is used as Content-Type when using POST/PUT with request body's.\n\nDependencies:\n\n* Are all indicated in package.json. So far I indicate the lowest version with which I tested the code. Sadly this can result in non-working code when later versions are used.\n\n\nCredits\n-------\n\n* [MongoDB Driver](http://github.com/christkv/node-mongodb-native)\n* [Express](http://expressjs.com/)\n* [npm](http://npmjs.org/)\n* [mongodb-rest](https://github.com/tdegrunt/mongodb-rest)\n* \n\nAuthors\n------------\n\n* Mariano Fiorentino\n* Andrea Negro\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mariano-fiorentino/amid/issues"
+  },
+  "_id": "amid@1.0.3",
+  "_from": "amid@"
 }
