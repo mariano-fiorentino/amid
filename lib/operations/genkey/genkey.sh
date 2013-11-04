@@ -1,6 +1,6 @@
-#|/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#/bin/bash
+## lunch it with database collection params
 
-sed  s/"application_seach"/$1/ $DIR/nodekey.js > $DIR/nodekey$1.js;
+sed  s/"application_seach"/$2/ nodekey.js > nodekey$2.js;
 
-mongo --quiet  application nodekey$1.js  > ../cache/$1Key
+mongo --quiet $1 nodekey$2.js  > ../cache/$2Key
