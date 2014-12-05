@@ -45,10 +45,11 @@ if (cluster.isMaster) {
   // Worker processes have a http server.
   
   
-  var express = require('express');
-
+    var express = require('express');
+    var bodyParser  = require('body-parser');
     var app = module.exports.app = express();
-    app.use(express.bodyParser());
+    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.json());
 
     // Bind to a port
     require('./lib/main');
