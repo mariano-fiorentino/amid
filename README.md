@@ -16,6 +16,9 @@ Node.js REST interface for MongoDB, we modified mongodb-rest (https://github.com
 - Multithreading support
 
 It's now also possible to search by date range and are managed sort operations.
+On this link there is an availabe a GUI that use AMID to query data over mongo collections:
+
+[amidGUI](https://github.com/mariano-fiorentino/amidGUI)
 
 Installation
 ------------
