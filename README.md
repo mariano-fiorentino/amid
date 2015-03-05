@@ -53,7 +53,15 @@ Content Type:
 
 Dependencies:
 
-* Are all indicated in package.json. So far I indicate the lowest version with which I tested the code. Sadly this can result in non-working code when later versions are used.
+*  "express": "~4.0.0",
+*  "morgan": "~1.0.0",
+*  "body-parser": "~1.0.0",
+*  "method-override": "~1.0.0",
+*  "mongodb": "~1.4.0",
+*  "jade": ">= 0.10.4",
+*  "log4js": ">= 0.5.0",
+*  "excel-export": ">= 0.2.1"
+
 
 
 Credits
