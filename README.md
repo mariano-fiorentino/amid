@@ -41,6 +41,7 @@ Supported REST requests:
 * `GET /db/collection/?sort=[{"property":null,"direction":"ASC"}]` - Returns all document soted by ASC
 * `GET /db/collection?query=%7B%22isDone%22%3A%20false%7D&operation=count` - Count elements 
 * `GET /db/collection?operation=distinct&fields=Market&sort=[{"property":null,"direction":"ASC"}]` - Distinct and sort operation
+* `GET /db/collection/?sort={"creationDate":-1}&skip=100&limit=100` - Example to sort by the field "creationdate", -1 is for ASC sorts, 1 means DESC sorts
 * `POST /db/collection` - Insert new document in collection (document in POST body)
 * `PUT /db/collection/id` - Update document with _id_ (updated document in PUT body)
 * `DELETE /db/collection/id` - Delete document with _id_
