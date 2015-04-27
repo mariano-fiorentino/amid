@@ -59,9 +59,9 @@ Dependencies:
 *  "body-parser": "~1.0.0",
 *  "method-override": "~1.0.0",
 *  "mongodb": "~1.4.0",
-*  "jade": ">= 0.10.4",
-*  "log4js": ">= 0.5.0",
-*  "excel-export": ">= 0.2.1"
+*  "jade": "~1.9.4",
+*  "log4js": "~0.6.0",
+*  "excel-export": "~0.4.0"
 
 
 
