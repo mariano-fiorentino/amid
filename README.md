@@ -42,14 +42,14 @@ The resulting status of services and applications is sent to a Grafite server to
 
 The follows is a partial  list  of the involved components: 
 
-[https://www.mongodb.org](https://www.mongodb.org)
-[http://docs.treasuredata.com/articles/td-agent](http://docs.treasuredata.com/articles/td-agent)
-[https://www.nagios.org](https://www.nagios.org)
-[http://www.thruk.org](http://www.thruk.org/)
-[http://graphite.wikidot.com](http://graphite.wikidot.com)
-[https://github.com/shawn-sterling/graphios](https://github.com/shawn-sterling/graphios)
-[http://grafana.org](http://grafana.org)
-[https://github.com/mariano-fiorentino/amidGUI](https://github.com/mariano-fiorentino/amidGUI)
+* [https://www.mongodb.org](https://www.mongodb.org)
+* [http://docs.treasuredata.com/articles/td-agent](http://docs.treasuredata.com/articles/td-agent)
+* [https://www.nagios.org](https://www.nagios.org)
+* [http://www.thruk.org](http://www.thruk.org/)
+* [http://graphite.wikidot.com](http://graphite.wikidot.com)
+* [https://github.com/shawn-sterling/graphios](https://github.com/shawn-sterling/graphios)
+* [http://grafana.org](http://grafana.org)
+* [https://github.com/mariano-fiorentino/amidGUI](https://github.com/mariano-fiorentino/amidGUI)
 
 
 Notes
