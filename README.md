@@ -26,10 +26,10 @@ Installation
 Installation is now via npm: `npm install amid`.
 After that you can just issue `amid-rest` on the command line and the server should start.
 
-Realtime monitoring with Nagios, MongoDB and AMID rest interface
+Realtime monitoring with Nagios, MongoDB and AMID Rest Interface
 ------------
 
-Here is shown an example of a monitoring system that integrate Nagios, MongoDB and AMID rest interface, to have a realtime monitoring of both services and log applications.
+Here is shown an example of a monitoring system that integrate Nagios, MongoDB and AMID Rest Interface, to have a realtime monitoring of both services and application logs.
 
 Application's datas arrives on MongoDB thanks to TD-Agent that is a service that can send logs data from file directly to a Mongo instance.
 Datas in Mongo collections are exposed through a rest interface with AMID.
