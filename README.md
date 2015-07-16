@@ -40,8 +40,6 @@ The resulting status of services and applications is sent to a Grafite server to
 
 ![http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png](http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png)
 
-[http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png](http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png)
-
 The follows is a partial  list  of the involved components: 
 
 * [https://www.mongodb.org](https://www.mongodb.org)
