@@ -38,6 +38,8 @@ Nagios queries services status with the NRPE client - or with ssh remote command
 
 The resulting status of services and applications is sent to a Grafite server to have realtime graphing on Grafana, while the collected logs are available for searching thanks to a web application (AMID GUI).
 
+![http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png](http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png)
+
 [http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png](http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png)
 
 The follows is a partial  list  of the involved components: 
