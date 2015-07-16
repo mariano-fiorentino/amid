@@ -26,6 +26,32 @@ Installation
 Installation is now via npm: `npm install amid`.
 After that you can just issue `amid-rest` on the command line and the server should start.
 
+Realtime monitoring with Nagios, MongoDB and AMID rest interface
+------------
+
+Here is shown an example of a monitoring system that integrate Nagios, MongoDB and AMID rest interface, to have a realtime monitoring of both services and log applications.
+
+Application's datas arrives on MongoDB thanks to TD-Agent that is a service that can send logs data from file directly to a Mongo instance.
+Datas in Mongo collections are exposed through a rest interface with AMID.
+
+Nagios queries services status with the NRPE client - or with ssh remote commands - installed on monitored servers, and the status of the applications with AMID, searching every minute errors in the differents Mongo collections.
+
+The resulting status of services and applications is sent to a Grafite server to have realtime graphing on Grafana, while the collected logs are available for searching thanks to a web application (AMID GUI).
+
+[http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png](http://www.noframeworks.com/wp-content/uploads/2015/07/Architettura_2.png)
+
+The follows is a partial  list  of the involved components: 
+
+[https://www.mongodb.org](https://www.mongodb.org)
+[http://docs.treasuredata.com/articles/td-agent](http://docs.treasuredata.com/articles/td-agent)
+[https://www.nagios.org](https://www.nagios.org)
+[http://www.thruk.org](http://www.thruk.org/)
+[http://graphite.wikidot.com](http://graphite.wikidot.com)
+[https://github.com/shawn-sterling/graphios](https://github.com/shawn-sterling/graphios)
+[http://grafana.org](http://grafana.org)
+[https://github.com/mariano-fiorentino/amidGUI](https://github.com/mariano-fiorentino/amidGUI)
+
+
 Notes
 -----
 
